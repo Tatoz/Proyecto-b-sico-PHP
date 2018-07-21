@@ -16,6 +16,7 @@ $usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Email</th>
+                <th>Password</th>
                 <th>Acción</th>
                 </tr>
                 <tr>
@@ -23,6 +24,7 @@ $usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
                 <td><?= $person->id; ?></td>
                 <td><?= $person->nombre; ?></td>
                 <td><?= $person->email; ?></td>
+                <td><?= $person->pass; ?></td>
                 <td>
                 <a href="edit.php?id=<?= $person->id ?>" class="btn btn-info">Editar</a>
                 <a onclick="return confirm('Seguro que quieres borrar a este usuario?')" href="delete.php?id=<?= $person->id ?>" class='btn btn-danger'>Eliminar</a>

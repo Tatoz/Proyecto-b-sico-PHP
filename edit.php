@@ -10,9 +10,9 @@ if (isset ($_POST['nombre'])  && isset($_POST['email']) ) {
   $email = $_POST['email'];
   date_default_timezone_set('America/Bogota');
   $fecha = date("Y-m-d h:i:s a");
-  $sql = 'UPDATE usuarios SET nombre=:nombre, email=:email , fecha=:fecha WHERE id=:id';
+  $sql = 'UPDATE usuarios SET nombre=:nombre, email=:email WHERE id=:id';
   $statement = $connection->prepare($sql);
-  if ($statement->execute([':nombre' => $nombre, ':email' => $email, ':id' => $id, ':fecha' => $fecha])) {
+  if ($statement->execute([':nombre' => $nombre, ':email' => $email, ':id' => $id])) {
     header("Location: index.php");
   }
 }
