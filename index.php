@@ -13,7 +13,11 @@ $usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
             <!-- Añadi este comentario como prueba en bash!-->
             <!-- Añadi este comentario como prueba en editor github!-->
              <!-- Añadi este comentario como prueba en editor github para sourcetree!-->
+<<<<<<< HEAD
               <!-- sdsdsd-->
+=======
+             <!-- Añadi este comentario como prueba en editor github para sourcetree para hacer commit!-->
+>>>>>>> 033446bda8e3f6cb451e565e9ad8876ec23e361c
         </div>
         <div class="card-body">
             <table class="table table-bordered">
