@@ -10,6 +10,7 @@ $usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
         <div class="card-header">
             <h2>Lista de Usuarios</h2>
             <!-- Añadi este comentario como prueba !-->
+            <!-- Añadi este comentario como prueba en bash!-->
         </div>
         <div class="card-body">
             <table class="table table-bordered">
